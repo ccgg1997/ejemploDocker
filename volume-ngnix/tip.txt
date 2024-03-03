@@ -1,7 +1,7 @@
 PARA TENER UN VOLUMEN ENTRE MI CONTENEDOR Y EL PROYECTO
 SOLO SE DEBE AGREGAR EL FLAG -V AL DOCKER RUN:
 
-docker run -it --rm -d -p 8080:80 -v ./sitio: usr/share/ngnix/html --name web-volume
+docker run -it --rm -v "$(pwd)/sitio:/usr/share/nginx/html" -d -p 8082:80 nombre-de-tu-imagen
 
 OTRA OPCION ES DEFINIRLO DESDE EL ARCHIVO DOCKERFILE (REVISAR ARCHIVO)
 
